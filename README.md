@@ -11,3 +11,4 @@
 •$ pip2 install mechanize
 
 •$ git clone https://github.com/ZAMUEL-MX/acmi
+acmi.py
