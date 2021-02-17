@@ -109,7 +109,7 @@ def masuk():
 	pilih_masuk()
 
 def pilih_masuk():
-	msuk = raw_input("\033[1;91m•》\033[91m:\033[1;92m ")
+	msuk = raw_input("\033[1;91m•》\033[37m:\033[1;92m ")
 	if msuk =="":
 		print"\033[37;1m[\033[91;1m!\033[37;1m] Isi Yg Benar !"
 		pilih_masuk()
@@ -270,7 +270,7 @@ def menu():
 	
 ######PILIH######
 def pilih():
-	unikers = raw_input("\033[1;91m•》\033[91m:\033[1;92m ")
+	unikers = raw_input("\033[1;91m•》\033[37m:\033[1;92m ")
 	if unikers =="":
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;97m Isi Yg Benar !"
 		pilih()
@@ -308,7 +308,7 @@ def indo():
 
 #### PILIH INDO ####
 def pilih_indo():
-	teak = raw_input("\033[1;91m•》\033[91m:\033[1;92m ")
+	teak = raw_input("\033[1;91m•》\033[37m:\033[1;92m ")
 	if teak =="":
 		print"\033[1;97m[\033[1;91m!\033[1;97m]\033[1;37m Isi Yg Benar !"
 		pilih_indo()
