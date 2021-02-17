@@ -66,10 +66,10 @@ logo = """
 \033[1;91m█▲▲▲▲▲ \033[37;1m      |:  |   | |:  1   | |:  |   | |:  |
 \033[1;91m█████████\033[37;1m    |::.|:. | |::.. . | |::.|:. | |::.|
 \033[1;91m__██____██___\033[37;1m`--- ---' `-------' `--- ---' `---
-\033[91;1m              ♛\033[1;91mMrX_ZAMUEL\033[91;1m♛
-\033[91;1m        ♛\033[1;37mAnonymous Cyber Muslim Indonesia\033[91;1m♛                                                                                                                                                                                
+\033[37;1m            ♛\033[1;91mMrX_ZAMUEL\033[37;1m♛
+\033[91;1m     ♛\033[1;37mAnonymous Cyber Muslim Indonesia\033[91;1m♛                                                                                                                                                                                
 \033[1;91mAuthor   :\033[1;37m ZAMUEL VOLDEMORD
-\033[1;91mGithub   :\033[1;37m github.com/ZAMUEL-MX
+\033[1;91mGithub   :\033[1;37m Github.com/ZAMUEL-MX
 \033[1;91mFacebook :\033[1;37m Facebook.com/zamuel.gans
 """
 
