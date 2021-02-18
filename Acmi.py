@@ -66,7 +66,7 @@ logo = """
 \033[1;91m█▲▲▲▲▲ \033[37;1m      |:  |   | |:  1   | |:  |   | |:  |
 \033[1;91m█████████\033[37;1m    |::.|:. | |::.. . | |::.|:. | |::.|
 \033[1;91m__██____██___\033[37;1m`--- ---' `-------' `--- ---' `---
-\033[37;1m            ♛\033[1;91mMrX_ZAMUEL\033[37;1m♛
+\033[37;1m             ♛\033[1;91mMrX_ZAMUEL\033[37;1m♛
 \033[91;1m     ♛\033[1;37mAnonymous Cyber Muslim Indonesia\033[91;1m♛                                                                                                                                                                                
 \033[1;91mAuthor   :\033[1;37m ZAMUEL VOLDEMORD
 \033[1;91mGithub   :\033[1;37m Github.com/ZAMUEL-MX
@@ -134,9 +134,9 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		print logo
-		print"\033[1;97m[\033[1;91m🤡\033[1;97m] LOGIN AKUN FACEBOOK ANDA \033[1;97m[\033[1;91m🤡\033[1;97m]"
-		id = raw_input('[\033[1;91m+\033[1;97m] ID / Email =\033[1;92m ')
-		pwd = raw_input('\033[1;97m[\033[1;91m?\033[1;97m] Password =\033[1;92m ')
+		print"\033[1;97m[\033[1;91m🤡\033[1;37m] LOGIN AKUN FACEBOOK ANDA \033[1;97m[\033[1;91m🤡\033[1;97m]"
+		id = raw_input('[\033[1;91m+\033[1;37m] ID / Email =\033[1;92m ')
+		pwd = raw_input('\033[1;91m[\033[1;91m?\033[1;37m] Password =\033[1;92m ')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
@@ -184,7 +184,7 @@ def login():
 def tokenz():
 	os.system('clear')
 	print logo
-	toket = raw_input("\033[1;97m[\033[1;91m?\033[1;97m] \033[1;93mToken : \033[1;92m")
+	toket = raw_input("\033[1;97m[\033[1;91m?\033[1;97m] \033[1;37mToken : \033[1;91m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
