@@ -119,6 +119,8 @@ def pilih_masuk():
 	elif msuk =="2" or msuk =="02":
 		tokenz()
 	elif msuk =="3"or msuk =="03":
+		Cookie()
+	elif msuk =="4"or msuk =="04":
 		Ambil_Token()
 	elif msuk =="0" or msuk =="00":
 		keluar()
@@ -136,8 +138,8 @@ def login():
 		os.system('clear')
 		print logo
 		print"\033[1;97m[\033[1;91m🤡\033[1;37m] LOGIN AKUN FACEBOOK ANDA \033[1;97m[\033[1;91m🤡\033[1;97m]"
-		id = raw_input('[\033[1;91m+\033[1;37m] ID / Email =\033[1;92m ')
-		pwd = raw_input('\033[1;91m[\033[1;37m?\033[1;37m] Password =\033[1;92m ')
+		id = raw_input('[\033[1;91m+\033[1;37m] ID / Email =\033[1;91m ')
+		pwd = raw_input('[\033[1;91m?\033[1;37m] Password =\033[1;91m ')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
