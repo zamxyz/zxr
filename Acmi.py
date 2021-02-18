@@ -67,7 +67,7 @@ logo = """
 \033[1;91m█████████\033[37;1m    |::.|:. | |::.. . | |::.|:. | |::.|
 \033[1;91m__██____██___\033[37;1m`--- ---' `-------' `--- ---' `---
 \033[37;1m             ♛\033[1;91mMrX_ZAMUEL\033[37;1m♛
-\033[91;1m     ♛\033[1;37mAnonymous Cyber Muslim Indonesia\033[91;1m♛                                                                                                                                                                                
+\033[91;1m    ♛\033[1;37mAnonymous Cyber Muslim Indonesia\033[91;1m♛                                                                                                                                                                                
 \033[1;91mAuthor   :\033[1;37m ZAMUEL VOLDEMORD
 \033[1;91mGithub   :\033[1;37m Github.com/ZAMUEL-MX
 \033[1;91mFacebook :\033[1;37m Facebook.com/zamuel.gans
@@ -104,12 +104,12 @@ def masuk():
 	print "\33[1;91m║[\033[1;37;1m01\33[1;91m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;91m║"
 	print "\33[1;91m║[\033[1;37;1m02\33[1;91m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;91m║"
 	print "\33[1;91m║[\033[1;37;1m03\33[1;91m]\033[37;1mAmbil Token                           \33[1;91m║"
-	print "\33[1;91m║\33[1;37m[\033[1;91;1m00\33[1;37m]\033[37;1mKeluar                                \33[1;91m║"
+	print "\33[1;91m║\33[1;91m[\033[1;91;1m00\33[1;91m]\033[37;1mKeluar                                \33[1;91m║"
 	print "\33[1;91m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
 def pilih_masuk():
-	msuk = raw_input("\033[1;91m•》\033[37m:\033[1;92m ")
+	msuk = raw_input("\033[1;91m•》\033[37m:\033[1;91m ")
 	if msuk =="":
 		print"\033[37;1m[\033[91;1m!\033[37;1m] Isi Yg Benar !"
 		pilih_masuk()
