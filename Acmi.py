@@ -101,10 +101,11 @@ def masuk():
 	os.system('clear')
 	print logo
 	print "\33[1;91m╔══════════════════════════════════════════╗"
-	print "\33[1;91m║[\033[1;37;1m01\33[1;91m]\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;91m║"
-	print "\33[1;91m║[\033[1;37;1m02\33[1;91m]\033[37;1mLogin Menggunakan Token Facebook      \33[1;91m║"
-	print "\33[1;91m║[\033[1;37;1m03\33[1;91m]\033[37;1mAmbil Token                           \33[1;91m║"
-	print "\33[1;91m║\33[1;91m[\033[1;91;1m00\33[1;91m]\033[37;1mKeluar                                \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m01\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m02\033[37;1mLogin Menggunakan Token Facebook      \33[1;91m║"
+        print "\33[1;91m║\033[1;37;1m02\033[37;1mLogin Menggunakan Cookie Facebook      \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m03\033[37;1mAmbil Token                           \33[1;91m║"
+	print "\33[1;91m║\033[1;91;1m00\033[37;1mKeluar                                \33[1;91m║"
 	print "\33[1;91m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
@@ -184,7 +185,7 @@ def login():
 def tokenz():
 	os.system('clear')
 	print logo
-	toket = raw_input("\033[1;97m[\033[1;91m?\033[1;97m] \033[1;37mToken : \033[1;91m")
+	toket = raw_input("\033[1;37m[\033[1;91m?\033[1;937m] \033[1;37mToken : \033[1;91m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -199,6 +200,47 @@ def tokenz():
 		print "\033[1;97m[\033[1;91m!\033[1;97m] \033[1;91mToken Salah !"
 		time.sleep(1)
 		masuk()
+
+
+#### LOGIN COOKIES ####
+def login_cookie():
+	os.system('clear')
+	print logo
+	print ("\033[0;97m");time.sleep(0.07)
+	try:
+		cookie = raw_input("\033[1;37m[\033[1;91m?\033[1;937m]\033[0;37m Cookie \033[0;37m:\033[0;91m ")
+		data = {
+		            'user-agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', # don't change this user agent.
+			        'referer' : 'https://m.facebook.com/',
+			        'host' : 'm.facebook.com',
+			        'origin' : 'https://m.facebook.com',
+			        'upgrade-insecure-requests' : '1',
+			        'accept-language' : 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
+			        'cache-control' : 'max-age=0',
+			        'accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+			        'content-type' : 'text/html; charset=utf-8',
+			         'cookie' : cookie }
+		coki = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = data)
+		cari = re.search('(EAAA\w+)', coki.text)
+		hasil = cari.group(1)
+		zedd = open("login.txt", 'w')
+		zedd.write(hasil)
+		zedd.close()
+		print '\033[0;92m Login Berhasil'
+		time.sleep(2)
+		bot_komen()
+	except AttributeError:
+		print '\033[0;91m! Cookie Salah'
+		time.sleep(2)
+		masuk()
+	except UnboundLocalError:
+		print '\033[0;91m! Cookie Salah'
+		time.sleep(2)
+		masuk()
+	except requests.exceptions.SSLError:
+		os.system('clear')
+		print '\033[0;91m! Koneksi Bermasalah'
+		exit()
 
 ######BOT KOMEN#######
 def bot_komen():
