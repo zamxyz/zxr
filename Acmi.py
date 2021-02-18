@@ -103,8 +103,8 @@ def masuk():
 	print "\33[1;91m╔══════════════════════════════════════════╗"
 	print "\33[1;91m║\033[1;37;1m01.\033[37;1mLogin Menggunakan Email / ID Facebook  \33[1;91m║"
 	print "\33[1;91m║\033[1;37;1m02.\033[37;1mLogin Menggunakan Token Facebook       \33[1;91m║"
-        print "\33[1;91m║\033[1;37;1m02.\033[37;1mLogin Menggunakan Cookie Facebook      \33[1;91m║"
-	print "\33[1;91m║\033[1;37;1m03.\033[37;1mAmbil Token                            \33[1;91m║"
+        print "\33[1;91m║\033[1;37;1m03.\033[37;1mLogin Menggunakan Cookie Facebook      \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m04.\033[37;1mAmbil Token                            \33[1;91m║"
 	print "\33[1;91m║\033[1;91;1m00.\033[37;1mKeluar                                 \33[1;91m║"
 	print "\33[1;91m╚══════════════════════════════════════════╝"
 	pilih_masuk()
@@ -202,7 +202,7 @@ def tokenz():
 		masuk()
 
 
-#### LOGIN COOKIES ####
+#####LOGIN_COOKIES#####
 def login_cookie():
 	os.system('clear')
 	print logo
