@@ -101,11 +101,11 @@ def masuk():
 	os.system('clear')
 	print logo
 	print "\33[1;91m╔══════════════════════════════════════════╗"
-	print "\33[1;91m║\033[1;37;1m01\033[37;1mLogin Menggunakan Email / ID Facebook \33[1;91m║"
-	print "\33[1;91m║\033[1;37;1m02\033[37;1mLogin Menggunakan Token Facebook      \33[1;91m║"
-        print "\33[1;91m║\033[1;37;1m02\033[37;1mLogin Menggunakan Cookie Facebook      \33[1;91m║"
-	print "\33[1;91m║\033[1;37;1m03\033[37;1mAmbil Token                           \33[1;91m║"
-	print "\33[1;91m║\033[1;91;1m00\033[37;1mKeluar                                \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m01.\033[37;1mLogin Menggunakan Email / ID Facebook  \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m02.\033[37;1mLogin Menggunakan Token Facebook       \33[1;91m║"
+        print "\33[1;91m║\033[1;37;1m02.\033[37;1mLogin Menggunakan Cookie Facebook      \33[1;91m║"
+	print "\33[1;91m║\033[1;37;1m03.\033[37;1mAmbil Token                            \33[1;91m║"
+	print "\33[1;91m║\033[1;91;1m00.\033[37;1mKeluar                                 \33[1;91m║"
 	print "\33[1;91m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
@@ -137,7 +137,7 @@ def login():
 		print logo
 		print"\033[1;97m[\033[1;91m🤡\033[1;37m] LOGIN AKUN FACEBOOK ANDA \033[1;97m[\033[1;91m🤡\033[1;97m]"
 		id = raw_input('[\033[1;91m+\033[1;37m] ID / Email =\033[1;92m ')
-		pwd = raw_input('\033[1;91m[\033[1;91m?\033[1;37m] Password =\033[1;92m ')
+		pwd = raw_input('\033[1;91m[\033[1;37m?\033[1;37m] Password =\033[1;92m ')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
