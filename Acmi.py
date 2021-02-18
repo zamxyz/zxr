@@ -108,7 +108,7 @@ def masuk():
 	pilih_masuk()
 
 def pilih_masuk():
-	msuk = raw_input("\033[1;91m•\033[37m》\033[1;37m ")
+	msuk = raw_input("\033[1;37m•\033[91m》\033[1;37m ")
 	if msuk =="":
 		print"\033[37;1m[\033[91;1m!\033[37;1m] Isi Yg Benar !"
 		pilih_masuk()
@@ -135,7 +135,7 @@ def login():
 		print logo
 		print"\033[1;97m[\033[1;91m🤡\033[1;37m] LOGIN AKUN FACEBOOK ANDA \033[1;97m[\033[1;91m🤡\033[1;97m]"
 		id = raw_input('[\033[1;91m+\033[1;37m] ID / Email =\033[1;91m ')
-		pwd = raw_input('[\033[1;91m?\033[1;37m] Password =\033[1;91m ')
+		pwd = raw_input('\033[1;37m[\033[1;91m?\033[1;37m] Password =\033[1;91m ')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
@@ -183,7 +183,7 @@ def login():
 def tokenz():
 	os.system('clear')
 	print logo
-	toket = raw_input("\033[1;37m[\033[1;91m?\033[1;937m] \033[1;37mToken : \033[1;37m")
+	toket = raw_input("\033[1;91m[\033[1;37m?\033[1;91m] \033[1;37mToken \033[1;91m: \033[1;37m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -206,7 +206,7 @@ def login_cookie():
 	print logo
 	print ("\033[0;97m");time.sleep(0.07)
 	try:
-		cookie = raw_input("\033[1;37m[\033[1;91m?\033[1;937m]\033[0;37m Cookie \033[0;37m:\033[0;97m ")
+		cookie = raw_input("\033[1;91m[\033[1;91m?\033[1;91m]\033[0;37m Cookie \033[0;91m:\033[0;37m ")
 		data = {
 		            'user-agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', # don't change this user agent.
 			        'referer' : 'https://m.facebook.com/',
