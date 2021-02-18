@@ -16,7 +16,7 @@ try:
 	import requests
 except ImportError:
 	os.system("pip2 install requests")
-	os.system("python2 Acmi.py")
+	os.system("python2 acmi.py")
 from requests.exceptions import ConnectionError
 from mechanize import Browser 
 
