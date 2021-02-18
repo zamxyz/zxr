@@ -66,8 +66,7 @@ logo = """
 \033[1;91m█▲▲▲▲▲ \033[37;1m      |:  |   | |:  1   | |:  |   | |:  |
 \033[1;91m█████████\033[37;1m    |::.|:. | |::.. . | |::.|:. | |::.|
 \033[1;91m__██____██___\033[37;1m`--- ---' `-------' `--- ---' `---
-\033[37;1m             ♛\033[1;91mMrX_ZAMUEL\033[37;1m♛
-\033[91;1m    ♛\033[1;37mAnonymous Cyber Muslim Indonesia\033[91;1m♛                                                                                                                                                                                
+                                                                                                                                                                               
 \033[1;91mAuthor   :\033[1;37m ZAMUEL VOLDEMORD
 \033[1;91mGithub   :\033[1;37m Github.com/ZAMUEL-MX
 \033[1;91mFacebook :\033[1;37m Facebook.com/zamuel.gans
@@ -104,13 +103,12 @@ def masuk():
 	print "\33[1;91m║\033[1;37;1m01.\033[37;1mLogin Menggunakan Email / ID Facebook  \33[1;91m║"
 	print "\33[1;91m║\033[1;37;1m02.\033[37;1mLogin Menggunakan Token Facebook       \33[1;91m║"
         print "\33[1;91m║\033[1;37;1m03.\033[37;1mLogin Menggunakan Cookie Facebook      \33[1;91m║"
-	print "\33[1;91m║\033[1;37;1m04.\033[37;1mAmbil Token                            \33[1;91m║"
 	print "\33[1;91m║\033[1;91;1m00.\033[37;1mKeluar                                 \33[1;91m║"
 	print "\33[1;91m╚══════════════════════════════════════════╝"
 	pilih_masuk()
 
 def pilih_masuk():
-	msuk = raw_input("\033[1;91m•》\033[37m:\033[1;91m ")
+	msuk = raw_input("\033[1;91m•\033[37m》\033[1;37m ")
 	if msuk =="":
 		print"\033[37;1m[\033[91;1m!\033[37;1m] Isi Yg Benar !"
 		pilih_masuk()
@@ -119,9 +117,7 @@ def pilih_masuk():
 	elif msuk =="2" or msuk =="02":
 		tokenz()
 	elif msuk =="3"or msuk =="03":
-		Cookie()
-	elif msuk =="4"or msuk =="04":
-		Ambil_Token()
+		login_cookie()
 	elif msuk =="0" or msuk =="00":
 		keluar()
 	else:
@@ -187,7 +183,7 @@ def login():
 def tokenz():
 	os.system('clear')
 	print logo
-	toket = raw_input("\033[1;37m[\033[1;91m?\033[1;937m] \033[1;37mToken : \033[1;91m")
+	toket = raw_input("\033[1;37m[\033[1;91m?\033[1;937m] \033[1;37mToken : \033[1;37m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -210,7 +206,7 @@ def login_cookie():
 	print logo
 	print ("\033[0;97m");time.sleep(0.07)
 	try:
-		cookie = raw_input("\033[1;37m[\033[1;91m?\033[1;937m]\033[0;37m Cookie \033[0;37m:\033[0;91m ")
+		cookie = raw_input("\033[1;37m[\033[1;91m?\033[1;937m]\033[0;37m Cookie \033[0;37m:\033[0;97m ")
 		data = {
 		            'user-agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', # don't change this user agent.
 			        'referer' : 'https://m.facebook.com/',
@@ -264,17 +260,6 @@ def bot_komen():
 	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post2+'/reactions?type=' +reac2+ '&access_token='+ toket)
 	menu()
-
-######AMBIL_TOKEN######
-def Ambil_Token():
-	os.system("clear")
-	print logo
-	jalan("\033[1;91mInstall...")
-	os.system ("cd ... && npm install")
-	jalan ("\033[1;91mMulai...")
-	os.system ("cd ... && npm start")
-	raw_input("\n[ Kembali ]")
-	masuk()
 
 ######MENU#######
 def menu():
