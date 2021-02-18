@@ -67,9 +67,9 @@ logo = """
 \033[1;91m█████████\033[37;1m    |::.|:. | |::.. . | |::.|:. | |::.|
 \033[1;91m__██____██___\033[37;1m`--- ---' `-------' `--- ---' `---
                                                                                                                                                                                
-\033[1;91mAuthor   :\033[1;37m ZAMUEL VOLDEMORD
-\033[1;91mGithub   :\033[1;37m Github.com/ZAMUEL-MX
-\033[1;91mFacebook :\033[1;37m Facebook.com/zamuel.gans
+\033[1;91m♛  \033[1;91mAuthor   :\033[1;37m ZAMUEL VOLDEMORD
+\033[1;91m♛  \033[1;91mGithub   :\033[1;37m Github.com/ZAMUEL-MX
+\033[1;91m♛  \033[1;91mFacebook :\033[1;37m Facebook.com/zamuel.gans
 """
 
 def tik():
@@ -108,7 +108,7 @@ def masuk():
 	pilih_masuk()
 
 def pilih_masuk():
-	msuk = raw_input("\033[1;37m•\033[91m》\033[1;37m ")
+	msuk = raw_input("\033[1;37m︻デ✪═══➽\033[1;91m:\033[1;37m ")
 	if msuk =="":
 		print"\033[37;1m[\033[91;1m!\033[37;1m] Isi Yg Benar !"
 		pilih_masuk()
