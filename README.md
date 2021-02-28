@@ -20,7 +20,7 @@ $ pip2 install requests
 
 $ pip2 install mechanize
 
-$ git clone https://github.com/ZAMUEL-MX/Acmi
+$ git clone https://github.com/zamxyz/Acmi
 
 $ cd Acmi
 
