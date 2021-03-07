@@ -1,10 +1,9 @@
-# SC BARU'-'!!
+# 》SC BARU'-'!!
 
-
+   
      ╔╦╗╔╦╗╔═╗╦  ╦
      ║║║ ║ ╔═╝╚╗╔╝
      ╩ ╩ ╩ ╚═╝ ╚╝ 
-
 
 #  》Install Script
 
@@ -23,3 +22,10 @@ $ git clone https://github.com/zamxyz/mtzv
 $ cd mtzv
 
 $ python2 mtzv.py
+
+
+# 》User & Pass
+
+• User = zamuel
+
+• Pass = gans
