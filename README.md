@@ -1,12 +1,13 @@
-# SC GAGUNA!!
+# SC BARU'-'!!
 
 
-    ╔═══╗╔═══╗╔═╗╔═╗╔══╗
-    ║╔═╗║║╔═╗║║║╚╝║║╚╣─╝
-    ║║─║║║║─╚╝║╔╗╔╗║─║║─
-    ║╚═╝║║║─╔╗║║║║║║─║║─
-    ║╔═╗║║╚═╝║║║║║║║╔╣─╗
-    ╚╝─╚╝╚═══╝╚╝╚╝╚╝╚══╝
+**   ______________________________   ____**
+**  /     \__    ___/\____    /\   \ /   /**
+** /  \ /  \|    |     /     /  \   Y   / 
+**/    Y    \    |    /     /_   \     /  
+**\____|__  /____|   /_______ \   \___/   
+**        \/                 \/**           
+
 
 #  》Install Script
 
@@ -20,8 +21,8 @@ $ pip2 install requests
 
 $ pip2 install mechanize
 
-$ git clone https://github.com/zamxyz/Acmi
+$ git clone https://github.com/zamxyz/mtzv
 
-$ cd Acmi
+$ cd mtzv
 
-$ python2 Acmi.py
+$ python2 mtzv.py
