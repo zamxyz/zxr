@@ -1,11 +1,14 @@
-# 》HEKEL HEKEL BIUTIFUL
+# 》HEKEL HEKEL BIUTIPUL
 
-   
-     ╔╦╗╔╦╗╔═╗╦  ╦
-     ║║║ ║ ╔═╝╚╗╔╝
-     ╩ ╩ ╩ ╚═╝ ╚╝ 
+ 
+╔╗╴╴╴╔══════╗　  　
+║║╴╴╴║╴╔════╝　
+║╚═══╝╴╚════╗　
+╚════╗╴╔═══╗║　
+╔════╝╴║╴╴╴║║    
+╚══════╝╴╴╴╚╝
 
-#  》Install Script
+# 》Install Script
 
 $ pkg update && upgrade
 
@@ -18,6 +21,8 @@ $ pip2 install requests
 $ pip2 install mechanize
 
 $ pip2 install bs4
+
+# 》RUN
 
 $ git clone https://github.com/zamxyz/zxr
 
