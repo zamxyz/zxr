@@ -1,4 +1,4 @@
-# 》SC BARU...!!
+# 》HEKEL HEKEL BIUTIFUL
 
    
      ╔╦╗╔╦╗╔═╗╦  ╦
@@ -19,15 +19,16 @@ $ pip2 install mechanize
 
 $ pip2 install bs4
 
-$ git clone https://github.com/zamxyz/mtzv
+$ git clone https://github.com/zamxyz/zxr
 
-$ cd mtzv
+$ cd zxr
 
-$ python2 mtzv.py
+$ python2 zxr.py
 
 
-# 》User & Pass
 
-• User = zamuel
+# GOD LUCK🤤👌
 
-• Pass = gans
+
+
+
